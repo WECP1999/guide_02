@@ -1,0 +1,50 @@
+.card {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  column-gap: 32px;
+}
+
+.card__header {
+  font-size: 1.5rem;
+  position: relative;
+}
+
+.card__body {
+  font-size: 1.5rem;
+  position: relative;
+}
+
+.card__footer > button {
+  font-size: 1rem;
+  position: relative;
+  color: white;
+  background-color: #E60000;
+  border: 1px solid #E60000;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.card__header::after {
+  display: block;
+  content: ' ';
+  position: absolute;
+  background-color: black;
+  width: 3px;
+  height: 24px;
+  border-radius: 4px;
+  top: 6px;
+  right: -16px;
+}
+
+.card__body::after {
+  display: block;
+  content: ' ';
+  position: absolute;
+  background-color: black;
+  width: 3px;
+  height: 24px;
+  border-radius: 4px;
+  top: 6px;
+  right: -16px;
+}
